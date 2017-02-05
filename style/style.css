@@ -1,0 +1,52 @@
+/* Inicio Formatear el Body*/
+body {
+    margin: 0px;
+}
+/* Fin Formatear el Body*/
+
+/* Inicio Barra de Navegación */ 
+.navbar {
+    width: 100%; /*Ocupa todo el ancho de la página*/
+    background-color: #F7F7F7; /*Color de fondo*/
+    position: fixed; /* Lo posiciona fijo: No respeta ni los paddings ni los margenes */
+    top: 0; /* Lo mueve a la parte superior de su contenedor (El body) */
+}
+
+.navbar > .navbar-list { /* Padre > Hijo*/
+    list-style-type: none; /*Quita circulos a los li que estan dentro del lu*/
+    margin: 0; /* Quita margenes por defecto de los li*/
+    float: right; /* Mueve la lista a la parte derecha de la página*/
+    font-size:0; /*Quita el pequeño espacio que hay entre las diferentes opciones del menu*/
+}
+
+.navbar > .navbar-list > .navbar-item { /*Abuelo > Padre > Hijo*/
+    display: inline-block; /* Respeta los margenes por arriba y por abajo*/
+    font-size:16px; /*Le ponemos de nuevo el tamaño para contrarrestar 0 que pusimos arriba*/
+}
+
+.navbar > .navbar-list > .navbar-item.active > .navbar-link{ /* .navbar-item.active : Indica que debe tener las dos clases.     Lo mismo que en hover*/
+    color: #F7F7F7; /*Cambia color del texto*/
+    background-color: #A4A4A4; /*Cambia el color del fondo*/
+}
+
+.navbar > .navbar-list > .navbar-item > .navbar-link {
+    display: inline-block; /* Truco: se repite igual que arriba por que si solo se pone en un lugar o no se pone en line o no respeta los margenes, pero trae un problema ahora se pierde el título de Batman */
+    text-decoration: none; /* No este subrayado*/
+    padding: 20px; /* Para que sea mas grande cada recuadro*/
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.navbar > .navbar-list > .navbar-item > .navbar-link:hover { /*Cuando se pase el raton sobre el elemento*/
+    /*Ojo ¿Qué pasa con el hover en las tablets y movil?*/
+    color: #F7F7F7; /*Cambia color del texto*/
+    background-color: #A4A4A4; /*Cambia el color del fondo*/
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+/* Fin Barra de Navegación */ 
