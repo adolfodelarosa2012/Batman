@@ -94,7 +94,19 @@ body {
 }
 /* Fin Header */ 
 
-.clearfix:after {
+/* Inicio Sección Quien Soy*/
+.about-me > .batman-video{
+    max-width: 50%;
+    float: left;
+}
+
+.about-me > .batman-info{
+    max-width: 50%;
+    float: right;
+}
+/* Fin Sección Quien Soy*/
+
+.clearfix:after {/*Los clearfix estan hechos para viehjos navegadores que no soportan clear*/
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;
     display: block;
