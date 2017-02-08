@@ -1,0 +1,86 @@
+.container {
+    width: 100%;        /*Que ocupe todo el ancho de la pantalla*/
+    max-width: 1200px;  /*Que el ancho máximo sea de 1200px (Si es más grande lo demas se rellena con espacios) */
+                        /*Esto no se aplica ni a la Barra de Navegación, Header y Footer*/
+    margin:0 auto;      /*Hace un centrado horizontal con 0px arriba y abajo y reparte de manera automatica y equitativa el espacio a la izquierda y derecha */
+}
+
+/* cleafix hack */ /* Para separar cada ROW */
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1 {    /* Equivale a 1 columna de un total de 12 columnas */
+    width: 8.33333333%;     /* El ancho de cada columna es 100% / 12 = 8.33333333% */
+    float: left;            /* Se coloca a la izquierda*/
+    display: inline-block;  /* Se pone en una linea respetando los margenes por arriba y por abajo*/
+}
+
+.col-2 {    /* Equivale a 1 columna de un total de 6 columnas */
+    width: 16.66666667%;
+    float: left;
+    display: inline-block;
+}
+
+.col-3 {    /* Equivale a 1 columna de un total de 4 columnas */
+    width: 25%;
+    float: left;
+    display: inline-block;
+}
+
+.col-4 {    /* Equivale a 1 columna de un total de 3 columnas */
+    width: 33.33333333%;
+    float: left;
+    display: inline-block;
+}
+
+.col-5 {    /* Equivale a 1 columna de un total de 2.XXXX columnas  */
+    width: 41.66666667%;
+    float: left;
+    display: inline-block;
+}
+
+.col-6 {        /* Equivale a 1 columna de un total de 2 columnas */
+    width: 50%;
+    float: left;
+    display: inline-block;
+}
+
+.col-7 {    /* Equivale a 1 columna de un tamaño de 58.33333333% de un total de 1 columnas */
+    width: 58.33333333%;
+    float: left;
+    display: inline-block;
+}
+
+.col-8 {    /* Equivale a 1 columna de un tamaño de 66.66666667% de un total de 1 columnas */
+    width: 66.66666667%;
+    float: left;
+    display: inline-block;
+}
+
+.col-9 {    /* Equivale a 1 columna de un tamaño de 75% de un total de 1 columnas */
+    width: 75%;
+    float: left;
+    display: inline-block;
+}
+
+.col-10 {   /* Equivale a 1 columna de un tamaño de 83.33333333% de un total de 1 columnas */
+    width: 83.33333333%;
+    float: left;
+    display: inline-block;
+}
+
+.col-11 {   /* Equivale a 1 columna de un tamaño de 91.66666667% de un total de 1 columnas */
+    width: 91.66666667%;
+    float: left;
+    display: inline-block;
+}
+
+.col-12 {   /* Equivale a 1 columna de un tamaño de 100% de un total de 1 columnas */
+    width: 100%;
+    float: left;
+    display: inline-block;
+}
