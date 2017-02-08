@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box; /* Esta propiedad hace que todas las cajas incluyan en el calculo de su tamaño, el Margen, Borde y padding: 
+                               Antes de meter esto si se le ponia un padding o margen a nuestras colummas del grid, lo rompia con esto se evita
+                             */
+}
 /* Inicio Formatear el Body*/
 body {
     margin: 0px;    
@@ -116,6 +121,17 @@ body {
     border-radius: 50%; /*Hace que las fotos sean redondas*/
 }
 /* Fin Seccion Equipo*/
+
+/* Inicio Formato a las Secciones */
+.section-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-content-reverse{
+    background-color: rgba(0, 0, 0, 0.92);
+    color: white;
+}
 
 .clearfix:after {/*Los clearfix estan hechos para viehjos navegadores que no soportan clear*/
     content: " "; /* Older browser do not support empty content */
