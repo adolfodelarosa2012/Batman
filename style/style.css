@@ -1,8 +1,16 @@
 /* Inicio Formatear el Body*/
 body {
-    margin: 0px;
+    margin: 0px;    
+    font-family: 'Roboto', sans-serif; /*Cambia la fuente de todo el documento*/
 }
 /* Fin Formatear el Body*/
+
+/* Inicio Fuentes almacednadas en el proyecto*/
+@font-face {
+    font-family: batman;
+    src: url(../fonts/batmfo__.ttf);
+}
+/* Fin Fuentes almacednadas en el proyecto*/
 
 /* Inicio Barra de Navegación */ 
 .navbar {
@@ -42,6 +50,50 @@ body {
     background-color: #A4A4A4; /*Cambia el color del fondo*/
 }
 
+/* Fin Barra de Navegación */ 
+
+/* Inicio Header */ 
+.header > .title { /* Hasta que no se puso esto el titulo estaba posicionado arriba y la imagen no ocupaba todo el vh
+                      El titulo estaba escondido atras de la barra del menú. 
+
+                    */
+    position:absolute; /*Con esto lo vamos a posicionar donde nosotros queramos. Se remueve el flujo normal de la página la poner absolute al h1*/
+    left: 0;
+    top: 65%;
+    width: 100%; /*Esto es necesario para que ocupe el 100% del ancho y se pueda centrar en la pantalla*/
+    color:white;
+    text-align: center;
+    font-family: batman; /*Fuente declarada en las font-face arriba*/
+    font-size: 100px;
+}
+
+/*1. Primera Forma de meter una imagen
+.header > .title-img {
+    width: 100%; /*Con esto evito que la imagen no se salga de la pantalla y que ocupe todo el ancho de la panntalla * /
+}
+*/
+/*2. Segunda Forma de meter una imagen (Servira para las animaciones) */
+.header > .title-img {
+    width: 100%; /*Con esto evito que la imagen no se salga de la pantalla y que ocupe todo el ancho de la panntalla */
+    background-image: url("../images/batman.jpg");
+    height: 100vh; /* vh= viewport Vh hace referencia a la centésima parte de la altura del viewport y vw a la centésima parte del ancho del viewport.
+                         Ocupa todo lo alto pero corta la imagen a lo ancho (Sin que haya scroll)*/
+    background-size: 100% 100%; /*Especifica el tamaño de la imagen*/
+    background-repeat: no-repeat; /*En caso de que la imagen sea más pequeña no se repita*/
+    background-position: center center; /*Especifica la posición inicial de la imagen de fondo*/
+}
+
+.header > .title-cite {
+    position: absolute;
+    top: 60%;
+    color:white;
+    width: 100%;
+    text-align: center;
+    font-family: batman;
+    font-size: 28px;
+}
+/* Fin Header */ 
+
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;
@@ -49,4 +101,3 @@ body {
     height: 0;
     clear: both;
 }
-/* Fin Barra de Navegación */ 
