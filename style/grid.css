@@ -14,7 +14,8 @@
 }
 
 .col-1 {    /* Equivale a 1 columna de un total de 12 columnas */
-    width: 8.33333333%;     /* El ancho de cada columna es 100% / 12 = 8.33333333% */
+    /*width: 8.33333333%;     /* El ancho de cada columna es 100% / 12 = 8.33333333% */
+    width: calc(100% /12);
     float: left;            /* Se coloca a la izquierda*/
     display: inline-block;  /*PARECE QUE ESTA LINEA REALMENTE NO ES NECESARIA*/
                             /* Se pone en una linea respetando los margenes por arriba y por abajo*/
@@ -33,7 +34,7 @@
 }
 
 .col-4 {    /* Equivale a 1 columna de un total de 3 columnas */
-    width: 33.33333333%;
+    width: calc(calc(100% /12)*4); /* Uso de la función calc()*/
     float: left;
     display: inline-block;
 }

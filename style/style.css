@@ -131,6 +131,9 @@ body {
 .section-content-reverse{
     background-color: rgba(0, 0, 0, 0.92);
     color: white;
+    margin-left: calc(-50vw + 50%); /*Lo que se trata es que esta seccion rellene las orilllas izquierda y derecha que no tienen el color del fondo*/
+    margin-right: calc(-50vw + 50%);/*Con la funcion CALC() obtenemos el valor de cada margen y si lo ponemos negativo esto hace que la sección se extienda*/
+                                    /*el 50% es sobre el contenedor y al restarlo del vw se obtiene la diferencia que falta por eso se pone ennegativo*/
 }
 
 .clearfix:after {/*Los clearfix estan hechos para viehjos navegadores que no soportan clear*/
