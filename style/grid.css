@@ -16,7 +16,8 @@
 .col-1 {    /* Equivale a 1 columna de un total de 12 columnas */
     width: 8.33333333%;     /* El ancho de cada columna es 100% / 12 = 8.33333333% */
     float: left;            /* Se coloca a la izquierda*/
-    display: inline-block;  /* Se pone en una linea respetando los margenes por arriba y por abajo*/
+    display: inline-block;  /*PARECE QUE ESTA LINEA REALMENTE NO ES NECESARIA*/
+                            /* Se pone en una linea respetando los margenes por arriba y por abajo*/
 }
 
 .col-2 {    /* Equivale a 1 columna de un total de 6 columnas */

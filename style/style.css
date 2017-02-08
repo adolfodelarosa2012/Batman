@@ -106,6 +106,17 @@ body {
 }
 /* Fin Sección Quien Soy*/
 
+/* Inicio Seccion Equipo*/
+.team-member-photo img {
+    height: 300px;  /* Establece el alto de la imagen a 300px - Dice que con esto el ancho tambien se pone a 300px No se pq. No es verdad pero si el ancho se ajusta en proporcion segun la imagen*/
+    max-width: 100%;    /*Using The max-width Property
+                         If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:*/
+                        /*Using The width Property
+                        If the width property is set to 100%, the image will be responsive and scale up and down:*/
+    border-radius: 50%; /*Hace que las fotos sean redondas*/
+}
+/* Fin Seccion Equipo*/
+
 .clearfix:after {/*Los clearfix estan hechos para viehjos navegadores que no soportan clear*/
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;
